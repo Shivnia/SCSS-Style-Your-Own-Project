@@ -1,0 +1,7 @@
+@function border-width($size) {
+    @return $size * 2px;
+}
+
+@function lighten-color($color, $amount) {
+    @return lighten($color, $amount);
+}

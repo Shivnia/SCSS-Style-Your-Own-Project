@@ -1,0 +1,21 @@
+@mixin button-style($bg-color, $text-color, $border-color) {
+    padding: $button-padding;
+    font-size: $submit-font-size;
+    cursor: pointer;
+    background-color: $bg-color;
+    border: 2px solid $border-color;
+    border-radius: $border-radius;
+    color: $text-color;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+        color: $text-color;
+    }
+}
+
+@mixin container-style($max-width, $margin) {
+    max-width: $max-width;
+    margin: $margin;
+    text-align: center;
+}

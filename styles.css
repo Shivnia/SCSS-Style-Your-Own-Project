@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5fbff;
+}
+
+#quiz {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+#quiz h1 {
+  font-size: 24px;
+}
+#quiz h2 {
+  margin-bottom: 20px;
+}
+#quiz #question {
+  font-size: 24px;
+}
+#quiz #choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#quiz #choices button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #f5fbff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  color: #007bff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+#quiz #choices button:hover {
+  background-color: #c2e7ff;
+  color: #007bff;
+}
+#quiz #choices button.correct {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+#quiz #choices button.correct:hover {
+  background-color: #1e7e34;
+  color: #ffffff;
+}
+#quiz #choices button.incorrect {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #dc3545;
+  border: 2px solid #dc3545;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+#quiz #choices button.incorrect:hover {
+  background-color: #bd2130;
+  color: #ffffff;
+}
+#quiz #submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-top: 20px;
+  border: none;
+}
+#quiz #submit:hover {
+  background-color: #0062cc;
+  color: #ffffff;
+}
+#quiz #submit:hover {
+  background-color: #0056b3;
+}
+#quiz #result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#categories {
+  margin-top: 20px;
+  text-align: left;
+}
+#categories legend {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#categories div {
+  margin-bottom: 10px;
+}
+#categories div input[type=radio] {
+  margin-right: 10px;
+}
+#categories div label {
+  font-size: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=styles.css.map */

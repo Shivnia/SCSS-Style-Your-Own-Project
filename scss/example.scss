@@ -1,0 +1,12 @@
+@import 'variables';
+
+@mixin validate-color($color) {
+    @if (lightness($color) > 50%) {
+        @warn "The color #{$color} is too light!";
+    }
+}
+
+.button {
+    @include validate-color($primary-color);
+    @include button-style($primary-color, $text-color, $primary-color);
+}

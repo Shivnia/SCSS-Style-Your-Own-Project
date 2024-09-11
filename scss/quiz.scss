@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'mixins';
+
+#quiz {
+    @include container-style($max-width, $margin);
+
+    h1 {
+        font-size: $question-font-size;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    #question {
+        font-size: $question-font-size;
+    }
+
+    #choices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+            @include button-style($background-color, $primary-color, $primary-color);
+            margin: $button-margin;
+            padding: $button-padding;
+            font-size: $choice-font-size;
+
+            &.correct {
+                @include button-style($correct-color, $text-color, $correct-color);
+            }
+
+            &.incorrect {
+                @include button-style($incorrect-color, $text-color, $incorrect-color);
+            }
+        }
+    }
+
+    #submit {
+        @include button-style($primary-color, $text-color, $primary-color);
+        margin-top: 20px;
+        border: none;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+
+    #result {
+        margin-top: 20px;
+        font-size: $result-font-size;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
